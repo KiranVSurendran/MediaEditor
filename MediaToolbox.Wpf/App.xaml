@@ -1,0 +1,19 @@
+<Application x:Class="MediaToolbox.Wpf.App" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" StartupUri="MainWindow.xaml">
+  <Application.Resources>
+    <SolidColorBrush x:Key="PageBrush" Color="#11161D"/>
+    <SolidColorBrush x:Key="PanelBrush" Color="#19212B"/>
+    <SolidColorBrush x:Key="PanelBorderBrush" Color="#2B3744"/>
+    <SolidColorBrush x:Key="TextBrush" Color="#EFF4F7"/>
+    <SolidColorBrush x:Key="MutedBrush" Color="#A0ADBA"/>
+    <SolidColorBrush x:Key="AccentBrush" Color="#28C8B9"/>
+    <SolidColorBrush x:Key="SidebarBrush" Color="#131A23"/>
+    <SolidColorBrush x:Key="InspectorBrush" Color="#171E27"/>
+    <SolidColorBrush x:Key="CanvasBrush" Color="#0C1117"/>
+    <SolidColorBrush x:Key="InputBrush" Color="#151D27"/>
+    <SolidColorBrush x:Key="ButtonBrush" Color="#222E3B"/>
+    <Style TargetType="TextBlock"><Setter Property="Foreground" Value="{DynamicResource TextBrush}"/><Setter Property="FontFamily" Value="Segoe UI"/></Style>
+    <Style TargetType="Button"><Setter Property="Foreground" Value="{DynamicResource TextBrush}"/><Setter Property="Background" Value="{DynamicResource ButtonBrush}"/><Setter Property="BorderBrush" Value="{DynamicResource PanelBorderBrush}"/><Setter Property="Padding" Value="12,8"/><Setter Property="Margin" Value="2"/><Setter Property="FontFamily" Value="Segoe UI"/><Setter Property="FontSize" Value="12"/><Setter Property="Cursor" Value="Hand"/><Setter Property="Template"><Setter.Value><ControlTemplate TargetType="Button"><Border x:Name="ButtonBorder" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" CornerRadius="7" Padding="{TemplateBinding Padding}"><ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/></Border><ControlTemplate.Triggers><Trigger Property="IsMouseOver" Value="True"><Setter TargetName="ButtonBorder" Property="Opacity" Value="0.84"/></Trigger><Trigger Property="IsKeyboardFocused" Value="True"><Setter TargetName="ButtonBorder" Property="BorderBrush" Value="{DynamicResource AccentBrush}"/><Setter TargetName="ButtonBorder" Property="BorderThickness" Value="2"/></Trigger><Trigger Property="IsEnabled" Value="False"><Setter TargetName="ButtonBorder" Property="Opacity" Value="0.5"/></Trigger></ControlTemplate.Triggers></ControlTemplate></Setter.Value></Setter></Style>
+    <Style TargetType="TextBox"><Setter Property="Foreground" Value="{DynamicResource TextBrush}"/><Setter Property="Background" Value="{DynamicResource InputBrush}"/><Setter Property="BorderBrush" Value="{DynamicResource PanelBorderBrush}"/><Setter Property="Padding" Value="9,7"/><Setter Property="FontFamily" Value="Segoe UI"/><Setter Property="CaretBrush" Value="{DynamicResource AccentBrush}"/><Setter Property="SelectionBrush" Value="#4081B8B0"/></Style>
+    <Style TargetType="ComboBox"><Setter Property="Foreground" Value="{DynamicResource TextBrush}"/><Setter Property="Background" Value="{DynamicResource InputBrush}"/><Setter Property="BorderBrush" Value="{DynamicResource PanelBorderBrush}"/><Setter Property="Padding" Value="7,6"/><Setter Property="FontFamily" Value="Segoe UI"/><Setter Property="FontSize" Value="12"/></Style>
+  </Application.Resources>
+</Application>

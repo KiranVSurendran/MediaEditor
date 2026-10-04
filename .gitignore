@@ -1,0 +1,26 @@
+# .NET build output
+**/bin/
+**/obj/
+**/publish/
+/build/
+/dist/
+
+# Local FFmpeg tools are supplied separately and must not be committed.
+/ffmpeg.exe
+/ffprobe.exe
+
+# Local settings, test media, and language caches
+/.dotnet-home/
+/.uv-cache/
+/.venv/
+/.test_harness/
+/.test_media/
+__pycache__/
+*.py[cod]
+
+# Visual Studio / editor state
+.vs/
+.idea/
+.vscode/
+*.user
+*.suo
